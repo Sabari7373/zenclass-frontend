@@ -1,0 +1,14 @@
+.video-container{
+    max-width: 800px; 
+    margin: 80px auto;
+    padding: 15px; 
+    background-color: #0e98e3;
+}
+video {
+    width: 100%; 
+    height: auto; 
+}
+video::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: rgb(79, 67, 67);
+}

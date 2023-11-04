@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .column1 {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    height: 35rem; 
+    background-color: rgb(138, 192, 211);
+    margin-left: 4rem;
+    border-radius: 25px;
+  }
+
+  .column2 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 23.5rem; 
+    margin-top: 6rem;
+    margin-left: 7%;
+    background-color: rgb(69, 127, 214);
+    border-radius: 15px;
+  }
+
+  .butttons{
+    margin: 10px;
+    min-width: 70px;
+    border-radius: 8px;
+    border: none;
+    float: left;
+  }
+
+  .Heading{
+    text-align: center;
+  }
+
+  p{
+    margin-top: 2%;
+    margin-left: 27px;
+    font-weight: 600;
+  }
+
+  .enterURL{
+    margin-left: 20px;
+  }
+
+  .labels{
+    color: rgb(38, 37, 37);
+    font-weight: 600;
+  }
+
+  .inputs{
+    width: 400px;
+  }
+
+  .submitButton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 107, 249);
+    border: none;
+    padding: 3px;
+    width: 200px;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 10px;
+  }
+
+.Join-class{
+  margin-left: 20rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 107, 249);
+  border: none;
+  padding: 3px;
+  width: 200px;
+  text-align: center;
+  border-radius: 7px;
+ }
+
+.head-prop{
+  margin-left: 27px;
+ }
+
+.time-prop{
+  margin-left: 27px;
+}
+

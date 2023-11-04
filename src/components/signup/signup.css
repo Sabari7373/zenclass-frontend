@@ -1,0 +1,17 @@
+.loginform{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 5%;
+    border: 5px solid rgb(87, 78, 222);
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+ }
+ .Heading{
+    padding: 10px;
+    border: 5px solid rgb(252, 252, 252);
+    border-radius: 10px;
+    background-color: azure;
+}

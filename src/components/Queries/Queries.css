@@ -1,0 +1,35 @@
+
+.loginforms{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    border: 5px solid rgb(82, 167, 184);
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 15%;
+    padding: 15px;
+ }
+ select {
+    background-color: #ffffff; 
+    color: #333; 
+    border: 3px solid #646464; 
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .Heading{
+   padding: 10px;
+   border: 5px solid rgb(252, 252, 252);
+   border-radius: 10px;
+   background-color: azure;
+}
+.queryTitle{
+   width:50%;
+   align-items: center;
+   justify-content: center;
+   margin-left: 25%;
+}

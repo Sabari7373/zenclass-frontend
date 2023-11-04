@@ -1,0 +1,29 @@
+.login-forms {
+    min-width: 200px;   
+    max-width: 400px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 10%;
+    border: 5px solid rgb(87, 78, 222);
+    border-radius: 20px;
+    text-align: center;
+ }
+
+ .Heading {
+    padding: 10px;
+    border: 5px solid rgb(252, 252, 252);
+    border-radius: 10px;
+    background-color: azure;
+    font-size:x-large;
+    margin: 30px;
+}
+
+.dropdown{
+    margin-bottom: 12px;
+    max-width: 60%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
+}
