@@ -45,7 +45,6 @@ export default function Login() {
     onSubmit: async (values) => {
       try {
         await axios.post(`${Config.api}/login`, values);
-
         // localStorage.setItem("react_app_token", Login.data.token);
         navigate("/dashboard");
       } catch (error) {
@@ -58,7 +57,7 @@ export default function Login() {
       <div >
         {/* <img alt="example" className="img-fluid headerimg" src="./backgroundcut_edit (5).png" /> */}
         <form onSubmit={formik.handleSubmit}>
-          <h1 className='Heading'>Student Login Account</h1>
+          <h1 className='Heading'>Login Account</h1>
           {/* email */}
           <MDBInput
              className="mb-4"

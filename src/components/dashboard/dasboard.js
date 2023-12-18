@@ -22,7 +22,7 @@ export default function Dashboard() {
       <MDBNavbar fixed="top" expand="lg" className="navBars" >
         <MDBContainer fluid>
           <Link to="/">
-            <MDBNavbarBrand color="dark">Navbar</MDBNavbarBrand>
+            <MDBNavbarBrand color="dark">Zenclass Dashboard</MDBNavbarBrand>
           </Link>
           <MDBNavbarToggler
             type="button"
@@ -45,7 +45,7 @@ export default function Dashboard() {
                     ZenClass Dashboard
                   </MDBNavbarBrand>
                 </Link>
-                <div className="sidebutton p-2 gap-4 mt-4">
+                <div className="sidebutton gap-3 mt-4">
                   <Link to="/dashboard">
                     <MDBBtn className="sidebtn">
                       <i class="fa-solid fa-chart-line"></i> Dashboard

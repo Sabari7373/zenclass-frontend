@@ -1,6 +1,6 @@
 
 .navBars{
-    background-color: rgb(255, 253, 253);
+    background: rgba(255, 255, 255, 0.786);
     padding: 1.2rem;
     
 
@@ -10,7 +10,7 @@
     
     width: 250px;
     height: 100vh;
-    background: rgb(254, 255, 253);
+    background: rgba(253, 255, 254, 0.786);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 .sidebtn{
     backdrop-filter: blur(2px);
-    background: rgb(165, 228, 245)!important;
+    background: rgb(148, 238, 232)!important;
     color: rgb(0, 0, 0) !important;
     font-weight: 700;
     margin-top: -10px;
