@@ -74,7 +74,7 @@ export default function Queries() {
                             <option value="Portfolio">Portfolio</option>
                         </select>
 
-                        <div className="inputForm">
+                        <div className="inputForm m-3">
                         <MDBInput
                                 id="queryTitle"
                                 Name="queryTitle"
@@ -84,7 +84,7 @@ export default function Queries() {
                                 value={formik.values.queryTitle}
                         />
                         </div>
-                        <div className="inputForm">
+                        <div className="inputForm m-3">
                          <MDBInput
                                 id="queryDescription"
                                 Name="queryDescription"
@@ -94,7 +94,7 @@ export default function Queries() {
                                 value={formik.values.queryDescription}
                         />
                         </div>
-                        <div className="inputForm">
+                        <div className="inputForm m-3">
                          <MDBInput
                                 id="timeFrom"
                                 Name="timeFrom"
@@ -105,7 +105,7 @@ export default function Queries() {
                                 value={formik.values.timeFrom}
                         />
                         </div>
-                        <div className="inputForm">
+                        <div className="inputForm m-3">
                         <MDBInput
                                 id="timeTo"
                                 Name="timeTo"

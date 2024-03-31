@@ -1,7 +1,7 @@
 import React from "react";
 import "./dahboard.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {
   MDBNavbar,
   MDBContainer,
@@ -14,9 +14,16 @@ import {
 } from "mdb-react-ui-kit";
 import ChartApp from "./chart";
 
+
+
+
 export default function Dashboard() {
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
-
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("hi");
+    }, 1000);
+  });
   return (
     <>
       <MDBNavbar fixed="top" expand="lg" className="navBars" >
@@ -45,7 +52,7 @@ export default function Dashboard() {
                     ZenClass Dashboard
                   </MDBNavbarBrand>
                 </Link>
-                <div className="sidebutton gap-3 mt-4">
+                <div className="sidebutton gap-3 mt-4 p-2">
                   <Link to="/dashboard">
                     <MDBBtn className="sidebtn">
                       <i class="fa-solid fa-chart-line"></i> Dashboard
@@ -120,16 +127,16 @@ export default function Dashboard() {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-      <MDBContainer className="chart gap-2 mb-3">
+      <MDBContainer className="chart gap-3 mb-3">
         <div className="back p-4 text-center">
           <MDBBtn className="btn">Codekata</MDBBtn>
           <h6 className="text-center m-3">Total marks : 100</h6>
-          <h6 className="text-center m-3">Today marks : 45</h6>
+          <h6 className="text-center m-3">You Got : 45</h6>
         </div>
         <div className="back p-4 text-center">
           <MDBBtn className="btn">Webkata</MDBBtn>
           <h6 className="text-center m-3">Total marks : 100</h6>
-          <h6 className="text-center m-3">Today marks : 62</h6>
+          <h6 className="text-center m-3">You Got : 62</h6>
         </div>
         <div className="back p-4 text-center">
           <MDBBtn className="btn">WebCode</MDBBtn>
