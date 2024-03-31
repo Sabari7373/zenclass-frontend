@@ -44,8 +44,9 @@ export default function Login() {
     validate,
     onSubmit: async (values) => {
       try {
-        await axios.post(`${Config.api}/login`, values);
-        // localStorage.setItem("react_app_token", Login.data.token);
+     var data =  await axios.post(`${Config.api}/login`, values);
+     console.log(data.data.token);
+        localStorage.setItem("token", data.data.token);
         navigate("/dashboard");
       } catch (error) {
         console.log(error);
