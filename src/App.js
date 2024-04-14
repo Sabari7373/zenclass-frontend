@@ -17,6 +17,13 @@ import JoinClass from './components/Students/join';
 //  For Protect the Routes 
 import { ProtectedRoute } from './ProtectedRoute';
 import LogOut from './Logout';
+import AdminDashboard from './components/dashboard/AdminDashboard.js';
+import CourseList from './components/Admin/Courselist.js';
+import AddCourseForm from './components/Admin/AddCourseForm.js';
+import StudentList from './components/Admin/StudentLIst.js';
+import AdminQueriesList from './components/Admin/QueiriesList.js';
+import AdminCertificate from './components/Admin/AdminCertificate.js';
+import AdminTasksPage from './components/Admin/Tasks.js';
 
 function App() {
   return (
@@ -36,11 +43,21 @@ function App() {
           <Route path='/syllabus' element={<ProtectedRoute><Syllabus /></ProtectedRoute>}></Route>
           <Route path='/certificate' element={<ProtectedRoute><Certificate /></ProtectedRoute>}></Route>
           <Route path='/joinclass' element={<ProtectedRoute><JoinClass /></ProtectedRoute>}></Route>
+
+          <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard/></ProtectedRoute>}></Route>
+          <Route path="/admin/courses" element={<ProtectedRoute><CourseList/></ProtectedRoute>}></Route>
+          <Route path="/admin/add-courses" element={<ProtectedRoute><AddCourseForm/></ProtectedRoute>}></Route>
+          <Route path="/admin/students" element={<ProtectedRoute><StudentList/></ProtectedRoute>}></Route>
+          <Route path="/admin/queries" element={<ProtectedRoute><AdminQueriesList/></ProtectedRoute>}></Route>
+          <Route path="/admin/tasks" element={<ProtectedRoute><AdminTasksPage/></ProtectedRoute>}></Route>
+          <Route path="/admin/certificate" element={<ProtectedRoute><AdminCertificate/></ProtectedRoute>}></Route>
+
         </Routes>
       </BrowserRouter>
     </>
 
   );
+  
 }
 
 export default App; 

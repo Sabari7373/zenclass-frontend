@@ -1,0 +1,20 @@
+.add-course-form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 3px solid #ed7e7e; 
+    border-radius: 10px;
+    padding: 20px; 
+  }
+  
+  .add-course-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .add-course-form label {
+    font-weight: bold;
+  }
+  
+  .add-course-form textarea {
+    height: 150px;
+  }
+  

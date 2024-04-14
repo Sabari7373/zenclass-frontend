@@ -1,0 +1,85 @@
+.admin-container {
+    display: flex;
+   
+  }
+
+  h1{
+    text-align: center;
+    color: rgba(238, 20, 20, 0.671);
+    background: #fffefe;
+    padding: 15px;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    height:100%;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar ul li {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    background: #f6f3f3;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding-bottom: 5px;
+  }
+  
+  .admin-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .admin-sidebar ul li a:hover {
+    color: #007bff;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .admin-widgets {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .admin-widget {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-widget h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-widget p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .admin-widget a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .admin-widget a:hover {
+    text-decoration: underline;
+  }
+  

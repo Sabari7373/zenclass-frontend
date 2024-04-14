@@ -1,6 +1,6 @@
 import React from "react";
 import "./dahboard.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import { useState,useEffect } from "react";
 import {
   MDBNavbar,
@@ -15,15 +15,19 @@ import {
 import ChartApp from "./chart";
 
 
-
-
 export default function Dashboard() {
+
+  const navigate = useNavigate()
+
+
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      console.log("hi");
-    }, 1000);
-  });
+
+
+ const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/");
+  };
+
   return (
     <>
       <MDBNavbar fixed="top" expand="lg" className="navBars" >
@@ -52,12 +56,11 @@ export default function Dashboard() {
                     ZenClass Dashboard
                   </MDBNavbarBrand>
                 </Link>
+
+
+
+
                 <div className="sidebutton gap-3 mt-4 p-2">
-                  <Link to="/dashboard">
-                    <MDBBtn className="sidebtn">
-                      <i class="fa-solid fa-chart-line"></i> Dashboard
-                    </MDBBtn>
-                  </Link>
 
                   <Link to="/class">
                     <MDBBtn className="sidebtn">
@@ -105,22 +108,18 @@ export default function Dashboard() {
                       <i class="fa-solid fa-chart-line"></i> Syllabus
                     </MDBBtn>
                   </Link>
-                  <Link to="/">
-                    <MDBBtn className="sidebtn">
-                      <i class="fa-solid fa-right-from-bracket"></i> Logout
-                    </MDBBtn>
-                  </Link>
+
 
                 </div>
               </div>
             </MDBNavbarNav>
 
-            <div >
-              <Link to="/" >
+            <div>
+             
                 <MDBBtn className="sideLogoutBtn"  >
-                  <i class="fa-solid fa-right-from-bracket"></i> Logout
+                  <i class="fa-solid fa-right-from-bracket" onClick={handleLogout()}></i> Logout 
                 </MDBBtn>
-              </Link>
+             
             </div>
 
 

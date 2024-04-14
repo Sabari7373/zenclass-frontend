@@ -1,0 +1,22 @@
+.student-list-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .student-name {
+    font-weight: bold;
+  }
+  .student-id {
+    font-weight: bold;
+  }
+  
+  .student-grade, .student-course,.student-id {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .list-group-item {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
