@@ -117,7 +117,7 @@ export default function Dashboard() {
             <div>
              
                 <MDBBtn className="sideLogoutBtn"  >
-                  <i class="fa-solid fa-right-from-bracket" onClick={handleLogout()}></i> Logout 
+                  <i class="fa-solid fa-right-from-bracket" onClick={handleLogout()}></i> Logout from Student 
                 </MDBBtn>
              
             </div>
