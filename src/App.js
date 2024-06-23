@@ -32,17 +32,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
-          <Route path="/class" element={<Class/>}></Route>
-          <Route path='/tasks' element={<Tasks />}></Route>
-          <Route path='/webcode' element={<Webcode />}></Route>
-          <Route path='/capstone' element={<Capstone />}></Route>
-          <Route path='/queries' element={<Queries />}></Route>
-          <Route path='/viewQueries' element={<QueriesList />}></Route>
-          <Route path='/requirements' element={<Requirements />}></Route>
-          <Route path='/syllabus' element={<Syllabus />}></Route>
-          <Route path='/certificate' element={<Certificate />}></Route>
-          <Route path='/joinclass' element={<JoinClass />}></Route>
+          <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
+          <Route path="/class" element={<ProtectedRoute><Class/></ProtectedRoute>}></Route>
+          <Route path='/tasks' element={<ProtectedRoute><Tasks /></ProtectedRoute>}></Route>
+          <Route path='/webcode' element={<ProtectedRoute><Webcode /></ProtectedRoute>}></Route>
+          <Route path='/capstone' element={<ProtectedRoute><Capstone /></ProtectedRoute>}></Route>
+          <Route path='/queries' element={<ProtectedRoute><Queries /></ProtectedRoute>}></Route>
+          <Route path='/viewQueries' element={<ProtectedRoute><QueriesList /></ProtectedRoute>}></Route>
+          <Route path='/requirements' element={<ProtectedRoute><Requirements/></ProtectedRoute >}></Route>
+          <Route path='/syllabus' element={<ProtectedRoute><Syllabus /></ProtectedRoute>}></Route>
+          <Route path='/certificate' element={<ProtectedRoute><Certificate /></ProtectedRoute>}></Route>
+          <Route path='/joinclass' element={<ProtectedRoute><JoinClass /></ProtectedRoute>}></Route>
+
+
 
           <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard/></ProtectedRoute>}></Route>
           <Route path="/admin/courses" element={<ProtectedRoute><CourseList/></ProtectedRoute>}></Route>

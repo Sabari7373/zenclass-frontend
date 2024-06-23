@@ -1,7 +1,7 @@
 import React from "react";
 import "./dahboard.css";
-import { Link,useNavigate} from "react-router-dom";
-import { useState,useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import {
   MDBNavbar,
   MDBContainer,
@@ -23,10 +23,14 @@ export default function Dashboard() {
   const [showNavNoTogglerSecond, setShowNavNoTogglerSecond] = useState(false);
 
 
- const handleLogout = () => {
+
+  const handleLogout = () => {
+
+    console.log("student");
     localStorage.removeItem("token");
     navigate("/");
   };
+
 
   return (
     <>
@@ -115,11 +119,13 @@ export default function Dashboard() {
             </MDBNavbarNav>
 
             <div>
-             
-                <MDBBtn className="sideLogoutBtn"  >
-                  <i class="fa-solid fa-right-from-bracket" onClick={handleLogout()}></i> Logout from Student 
-                </MDBBtn>
-             
+
+      
+
+              <MDBBtn className="sideLogoutBtn" onClick={handleLogout} >
+                <i className="fa-solid fa-right-from-bracket"></i> Logout from Student
+              </MDBBtn>
+
             </div>
 
 
@@ -151,7 +157,7 @@ export default function Dashboard() {
 
       {/* Here import the Chart JS File */}
 
-                 <ChartApp />
+      <ChartApp />
 
     </>
   );

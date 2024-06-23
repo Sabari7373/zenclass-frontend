@@ -4,14 +4,17 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   MDBBtn,
 } from "mdb-react-ui-kit";
+import LogOut from "../../Logout";
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
 
   const handleAdminLogout = () => {
+    console.log("admin");
     localStorage.removeItem("token");
     navigate("/");
   };
+
 
   return (
     <>
@@ -19,8 +22,9 @@ const AdminDashboard = () => {
         <h1 style={{ position: 'relative' }}>Admin Dashboard</h1>
         <div style={{ position: 'absolute', top: 15, right: 15 }}>
           <div>
-            <MDBBtn className="sideLogoutBtn">
-              <button className="fa-solid fa-right-from-bracket" onClick={handleAdminLogout}>Logout</button>
+            <MDBBtn className="sideLogoutBtn" onClick={handleAdminLogout}>
+              <button className="fa-solid fa-right-from-bracket" >Logout</button> 
+              
             </MDBBtn>
           </div>
         </div>
